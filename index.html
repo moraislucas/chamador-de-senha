@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Chamado de senhas</title>
+</head>
+
+<body>
+
+    <div class="menu container">
+        <div class="menu-name">
+            <a href="#">Chamador de senha</a>
+        </div>
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="#" class="instrucoes">Como usar</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section-senha container">
+
+        <div class="chamada-senha">
+            <div class="senha-atual">
+                <h1>SENHA <span class="senha">0000</span></h1>
+
+                <input type="hidden" class="normal" value="0000">
+                <input type="hidden" class="prioridade" value="P000">
+            </div>
+
+            <div class="senha-anterior">
+                <h2>ÚLTIMA CHAMADA</h2>
+                <h1>SENHA <span class="anterior">0000</span></h1>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/moraislucas" target="_blank">Lucas Morais</a></p>
+    </footer>
+
+
+    <!-- Modal -->
+    <div class="modal-info mostrar" id="modal-instrucoes">
+        <div class="modal-container">
+            <button class="fecha-modal">x</button>
+            <div class="modal-title">
+                <h3 class="info-modal">Como usar</h5>
+            </div>
+            <div class="modal-body">
+
+                <table>
+                    <h4 class="titulo-table">Senha convêncional</h4>
+                    <tr>
+                        <th>Setas</th>
+                        <th>Ação</th>
+                    </tr>
+                    <tr>
+                        <td>🡒</td>
+                        <td>
+                            <p>Próxima senha</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>🡐</td>
+                        <td>
+                            <p>Senha anterior</p>
+                        </td>
+                    </tr>
+                </table>
+
+                <table>
+                    <h4 class="titulo-table">Senha preferencial</h4>
+                    <tr>
+                        <th>Setas</th>
+                        <th>Ação</th>
+                    </tr>
+                    <tr>
+                        <td>🡑</td>
+                        <td>
+                            <p>Próxima senha</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>🡓</td>
+                        <td>
+                            <p>Senha anterior</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-cancelar" id="btn-cancela">Entendido</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <audio id="audioChamada" src="audio/chamada.wav"></audio>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
